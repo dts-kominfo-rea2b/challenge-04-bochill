@@ -11,7 +11,7 @@ const dates = [
 const createDate = function (data, indeks) {
   const dateArray = [];
   for (let x = 0; x < data.length; x++) {
-    const date = new Date(data[x]).getTime / 1000;
+    const date = new Date(data[x]).getTime() / 1000;
     const dateStr = date.toString();
     dateArray.push(dateStr);
   }
