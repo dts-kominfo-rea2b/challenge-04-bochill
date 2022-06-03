@@ -10,7 +10,7 @@ const dates = [
 // TODO: Buatlah fungsi createDate
 const createDate = function (data, indeks) {
   const dateArray = [];
-  for (let x; x < data; x++) {
+  for (let x; x < data.length; x++) {
     const date = new Date(data[x]).getTime / 1000;
     const dateStr = date.toString();
     dateArray.push(dateStr);
